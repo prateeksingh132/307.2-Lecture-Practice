@@ -1,0 +1,120 @@
+/* External stylesheet, lowest precendence */
+
+
+body {
+    background-color: darkslategrey;
+    color: black;
+    font-size: 1.1em;
+}
+
+h1 {
+    color: coral;
+}
+
+#intro {
+    font-size: 1.3em;
+}
+
+.colorful {
+    color: orange;
+}
+
+section {
+    border: 5px solid black;
+    padding: 10px;
+    background-color: #dbfffe;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: inline;
+}
+
+nav li:hover {
+    background-color: darkgreen;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+#navBar {
+    background-color: teal;
+    padding: 10px;
+}
+
+.specialStyling {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Additional styles can be added here */
+
+/* Combinator Example descendent*/
+div p {
+  background-color: yellow;
+}
+/* Combinator Example child */
+div > p {
+  border: 2px solid red;
+}   
+/* Combinator Example adjacent sibling */
+h4 + p {
+  font-style: italic;
+  border: 2px dashed blue;
+}   
+/* Combinator Example General Sibling */
+h4 ~ p {
+  text-decoration: underline;
+  color: green;
+}
+
+
+/* Pseudo-class example */
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/* Pseudo-class example */
+
+/* pseudo element examples */
+
+#pseudo::first-letter {
+  font-size: 200%;
+  color: purple;
+  background-color: lightpink;
+}
+#pseudo2::first-line {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: lightgrey;
+}
+#pseudo3::before {
+  content: "Note: ";
+  font-weight: bold;
+  color: red;
+}
+#pseudo4::after {
+  content: " (end of paragraph)";
+  font-style: italic;
+  color: grey;
+}
+
+/* pseudo element examples */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+
+<body>
+
+
+
+    <!-- Emmette snippets: fieldset>h1{Register Page}+(label*5>input:text)+(div{Gender}>input:radio)+(label{Date of Birth}>input:datetime)+(div{Habits}>label*3>input:textbox)+input:submit -->
+
+    <fieldset>
+        <h1>Register Page</h1>
+        <form>
+            <label>First Name
+                <input type="text" id="firstName" placeholder="Enter your first name" required />
+            </label>
+            <br />
+            <label>Last Name
+                <input type="text" id="lastName" placeholder="Enter your last name" required />
+            </label>
+            <br />
+            <label>Email
+                <input type="email" id="email" placeholder="Enter your email" required />
+            </label>
+            <br />
+            <label>Password
+                <input type="password" name="password" id="password" placeholder="Enter your password" required />
+            </label>
+            <br />
+            <label>Confirm Password
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password"
+                    required />
+            </label>
+            <br />
+
+            <label>Gender</label>
+            <label> <input type="radio" name="radio" id="radio1" /> Female </label>
+            <label> <input type="radio" name="radio" id="radio2" /> Male </label>
+            </label>
+            <br />
+            <label>Date of Birth
+                <input type="date" id="dob" placeholder="mm/dd/yy" required required />
+            </label>
+            <br />
+            <label>Habits</label>
+            <label for="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" />You like sports
+            </label>
+            <label for="checkbox2">
+                <input type="checkbox" name="checkbox2" id="checkbox2" />You like to eat
+            </label>
+            <label for="checkbox3">
+                <input type="checkbox" name="checkbox3" id="checkbox3" />You like to sleep
+            </label>
+            <br />
+            <input type="submit" value="Register" />
+        </form>
+    </fieldset>
+
+
+
+</body>
+
+</html>
